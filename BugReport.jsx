@@ -1,5 +1,5 @@
 
-import { use, useState } from "react";
+import { useState } from "react";
 
 const TechBugReportForm = () =>{
     const [bugName,setbugName]=useState("")
@@ -10,7 +10,7 @@ const TechBugReportForm = () =>{
     const notvalidtext ={color:"red"}
     const hSubmit=(e)=>{
         e.preventDefault()
-        if(bugName && bugDesc && bugMod){
+        if(bugName.trim() && bugDesc.trim() && bugMod){
             setfSubmit(true)
         }
     }
@@ -21,12 +21,12 @@ const TechBugReportForm = () =>{
                 <div>
                     <label htmlFor="bugname">Bug Name</label>
                     <input type="text" onChange={(e)=>{setbugName(e.target.value)}} />
-                    {bugName?<p></p>:<p style={notvalidtext}>Bug Name Required</p>}
+                    {bugName.trim()?<p></p>:<p style={notvalidtext}>Bug Name Required</p>}
                 </div>
                 <div>
                     <label htmlFor="bugdesc">Bug Description</label>
                     <textarea onChange={(e)=>{setbugDesc(e.target.value)}} />
-                    {bugDesc?<p></p>:<p style={notvalidtext}>Bug Description Required</p>}
+                    {bugDesc.trim()?<p></p>:<p style={notvalidtext}>Bug Description Required</p>}
                 </div>
                 <div>
                     <label htmlFor="bugmodule">Bug Module</label>

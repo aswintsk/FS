@@ -50,7 +50,8 @@ import './App.css';
 // import ExpeseTracker from './ExpenseTracker';
 
 
-import TechBugReportForm from './BugReport';
+// import TechBugReportForm from './BugReport';
+import ThemeSwitch from './ThemeSwitch';
 function App()
 {
   return(
@@ -83,7 +84,9 @@ function App()
       {/* <BtnMsg/> */}
      {/* <ExpeseTracker/> */}
 
-      <TechBugReportForm/>
+      {/* <TechBugReportForm/> */}
+        <ThemeSwitch/>
+
       </div>
   );
 }

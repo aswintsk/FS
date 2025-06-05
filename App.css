@@ -356,7 +356,7 @@ transform: scale(1.015);
 
 
 /*  BUG FORM*/
-
+/* 
 .bug-main{
   padding: 20px;
   margin: 20px;
@@ -375,4 +375,37 @@ transform: scale(1.015);
   flex-direction: column;
   gap: 4px;
 }
+.bug-form input,select,button{
+  padding: 6px;
 
+} */
+
+
+
+/* Theme */
+
+.light{
+  background-color: aliceblue;
+}
+
+.dark{
+  background-color: black;
+  color: white
+}
+
+.preview{
+  width: 500px;
+  height: 500px;
+}
+
+.theme-main{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 10px;
+}
+
+.theme-main .preview{
+  display: flex;
+  
+}
